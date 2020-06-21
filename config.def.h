@@ -129,8 +129,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,       quit,           {0} },
     /* Custom Keybinds */
     { MODKEY,                       XK_b,       spawn,          {.v = wwwcmd } },
-    { 0, XF86XK_AudioRaiseVolume,               spawn,          {.v = volup5 } },
-    { 0, XF86XK_AudioLowerVolume,               spawn,          {.v = voldown5 } },
+    { 0,         XF86XK_AudioRaiseVolume,       spawn,          {.v = volup5 } },
+    { 0,         XF86XK_AudioLowerVolume,       spawn,          {.v = voldown5 } },
 };
 
 /* button definitions */
