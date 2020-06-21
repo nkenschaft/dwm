@@ -126,7 +126,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                       6)
 	TAGKEYS(                        XK_8,                       7)
 	TAGKEYS(                        XK_9,                       8)
-	/* { MODKEY|ShiftMask,             XK_q,       quit,           {0} }, */
+	{ MODKEY|ShiftMask,             XK_q,       quit,           {0} },
     /* Custom Keybinds */
     { MODKEY,                       XK_b,       spawn,          {.v = wwwcmd } },
     { 0, XF86XK_AudioRaiseVolume,               spawn,          {.v = volup5 } },
