@@ -69,10 +69,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]    = { "alacritty", NULL };
-static const char *wwwcmd[]     = { "$BROWSER", NULL };
 static const char *volup5[]     = { "pulsemixer", "--change-volume", "+5" };
 static const char *voldown5[]   = { "pulsemixer", "--change-volume", "-5" };
-static const char *volmute[]    = { "pulsemixer", "--toggle-mute" };
 
 #include <X11/XF86keysym.h>
 static Key keys[] = {
@@ -129,10 +127,10 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                       8)
 	{ MODKEY|ShiftMask,             XK_q,       quit,           {0} },
     /* Custom Keybinds */
-    { MODKEY,                       XK_b,       spawn,          {.v = wwwcmd } },
+    { MODKEY,                       XK_b,       spawn,          SHCMD("$BROWSER") },
     { 0,         XF86XK_AudioRaiseVolume,       spawn,          {.v = volup5 } },
     { 0,         XF86XK_AudioLowerVolume,       spawn,          {.v = voldown5 } },
-    { 0,         XF86XK_AudioMute,              spawn,          {.v = volmute } },
+    { 0,         XF86XK_AudioMute,              spawn,          SHCMD("pulsemixer --toggle-mute") },
 };
 
 /* button definitions */
