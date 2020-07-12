@@ -72,6 +72,7 @@ static const char *termcmd[]    = { "alacritty", NULL };
 static const char *wwwcmd[]     = { "$BROWSER", NULL};
 static const char *volup5[]     = { "pulsemixer", "--change-volume", "+5" };
 static const char *voldown5[]   = { "pulsemixer", "--change-volume", "-5" };
+static const char *volmute[]    = { "pulsemixer", "--toggle-mute"};
 
 #include <X11/XF86keysym.h>
 static Key keys[] = {
@@ -131,6 +132,7 @@ static Key keys[] = {
     { MODKEY,                       XK_b,       spawn,          {.v = wwwcmd } },
     { 0,         XF86XK_AudioRaiseVolume,       spawn,          {.v = volup5 } },
     { 0,         XF86XK_AudioLowerVolume,       spawn,          {.v = voldown5 } },
+    { 0,         XF86XK_AudioMute,              spawn,          {.v = volmute } },
 };
 
 /* button definitions */
