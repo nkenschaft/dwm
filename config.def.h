@@ -131,8 +131,8 @@ static Key keys[] = {
     { 0,         XF86XK_AudioRaiseVolume,       spawn,          {.v = volup5 } },
     { 0,         XF86XK_AudioLowerVolume,       spawn,          {.v = voldown5 } },
     { 0,                XF86XK_AudioMute,       spawn,          SHCMD("pulsemixer --toggle-mute") },
-    { 0,            XF86_MonBrightnessUp,       spawn,          SHCMD("xbacklight -inc 5") },
-    { 0,          XF86_MonBrightnessDown,       spawn,          SHCMD("xbacklight -dec 5") },
+    { 0,          XF86XK_MonBrightnessUp,       spawn,          SHCMD("xbacklight -inc 5") },
+    { 0,        XF86XK_MonBrightnessDown,       spawn,          SHCMD("xbacklight -dec 5") },
 };
 
 /* button definitions */
