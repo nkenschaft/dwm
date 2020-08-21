@@ -11,8 +11,8 @@ static const unsigned int gappov    = 5;       /* vert outer gap between windows
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*", "MesloLGS:size=12" };
-static const char dmenufont[]       = "-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*";
+static const char *fonts[]          = { "Hack:size=12", "MesloLGS:size=12" };
+static const char dmenufont[]       = "Hack:size=12";
 static const char col_gray1[]       = "#282a36"; /* "#222222"; /* normal background */
 static const char col_gray2[]       = "#6272a4"; /* "#444444"; /* normal border */
 static const char col_gray3[]       = "#f8f8f2"; /* "#bbbbbb"; /* normal foreground */
